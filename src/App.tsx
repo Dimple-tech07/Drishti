@@ -2,7 +2,8 @@ import { motion, AnimatePresence, useScroll, useSpring, useTransform, useMotionV
 import { Megaphone, Radar, HandHeart, Shield, BarChart3, Send, Eye, ArrowLeft, MapPin, Users, MessageSquare, ShieldCheck, Activity, Search, Bell } from 'lucide-react';
 import Background from './components/Background';
 import React, { ReactNode, useRef, useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate, Link } from 'react-router-dom';
+// BrowserRouter ki jagah HashRouter use kiya hai taaki GitHub Pages par routing sahi chale
+import { HashRouter as Router, Routes, Route, useNavigate, Link } from 'react-router-dom';
 
 // --- Types ---
 interface HoverIconCardProps {
@@ -616,4 +617,3 @@ export default function App() {
     </Router>
   );
 }
-
