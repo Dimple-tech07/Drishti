@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --trust-blue: #0A84FF;
+  --success-green: #32D74B;
+  --urgent-amber: #FF9F0A;
+  --bg-dark: #050510;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ✈️ Paper Plane Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  background: rgba(10, 132, 255, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 132, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Glassmorphism Panel Utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+}
+
+.glow-text {
+  text-shadow: 0 0 30px rgba(10, 132, 255, 0.7);
+}
